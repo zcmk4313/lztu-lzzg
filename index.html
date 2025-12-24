@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保护地球 | 守护我们的家园</title>
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fdf9;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: #ffffff;
+            padding: 1rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d6a4f;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #40916c;
+        }
+
+        /* 英雄区块 */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: #52b788;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #40916c;
+        }
+
+        /* 核心板块 */
+        .features {
+            padding: 4rem 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #2d6a4f;
+            margin-bottom: 1rem;
+        }
+
+        /* 关于我们 */
+        .about {
+            background-color: #f0f7f4;
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 1.5rem;
+            color: #1b4332;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #1b4332;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            header { flex-direction: column; }
+            nav ul { margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🌿 绿色地球</div>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#action">行动计划</a></li>
+                <li><a href="#about">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>守护地球，就是守护未来</h1>
+        <p>每一个微小的行动，汇聚起来就是改变世界的力量。加入我们，共同保护这一颗蓝色的星球。</p>
+        <a href="#action" class="btn">立即加入</a>
+    </section>
+
+    <section id="action" class="features">
+        <div class="card">
+            <h3>减少塑料</h3>
+            <p>拒绝一次性塑料制品，使用可降解材料，保护海洋生物免受污染威胁。</p>
+        </div>
+        <div class="card">
+            <h3>节约能源</h3>
+            <p>随手关灯，使用低能耗电器，减少碳排放，缓解全球气候变暖。</p>
+        </div>
+        <div class="card">
+            <h3>植树造林</h3>
+            <p>种下一棵树，为地球增添一抹绿色，改善空气质量，保护生物多样性。</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>我们的愿景</h2>
+        <p>我们致力于通过教育和社区行动，提高公众的环保意识。我们相信，通过人与自然的和谐相处，可以为后代留下一个更加洁净、繁茂的世界。保护地球不是一个选择，而是我们共同的责任。</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 绿色地球倡议行动. 保留所有权利。</p>
+    </footer>
+
+</body>
+</html>
